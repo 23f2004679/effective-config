@@ -52,7 +52,7 @@ def convert_value(key, value):
         return int(value)
 
     if key == "debug":
-        return str(value).lower() == "true"
+        return str(value).strip().lower() in {"true", "1", "yes", "on"}
 
     return value
 
