@@ -84,6 +84,6 @@ def effective_config(request: Request):
     config = apply_overrides(config, request)
 
     if "api_key" in config:
-        config["api_key"] = "*****"
+        config["api_key"] = "****"
 
     return config
